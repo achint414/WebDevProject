@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainy.com</title>
+    <link rel = "icon" href = "Images/icon.ico" type = "image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Website2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style> 
+        #main{
+            height:1000px;
+         }
+        #right{
+            font-family:Arial, Helvetica, sans-serif;
+             color:white;
+        }
+        
+        input:focus{
+          outline:none;
+        }
+        textarea:focus{
+            outline: none;
+        }
+        #input1{
+        height:35px;
+        width:100%;
+        border:1.5px solid rgb(97, 97, 97);
+        }
+        #input2{
+        height:35px;
+        width:100%;
+        border:1.5px solid rgb(97, 97, 97);
+        }
+        form select{
+        height:35px;
+        width:150px;
+        border:1.5px solid rgb(97, 97, 97);
+        }
+        #emailbtn{
+            color:rgb(66, 65, 65);
+            margin-top:20px;
+        }
+        #emailbtn:hover{
+            background-color:transparent;
+            transition:background-color 0.4s;
+        }
+        #end{
+        padding: 30px 40px 0px 0px;
+        width:100%;
+        height:100px;
+        background-color:black;
+        text-align:right;
+        color:white;
+        }
+    end p{
+    font-size:17px;
+    }
+
+        #marq{
+        background-color:#00b300;
+        color:black;
+        box-shadow: 0px 0px 5px black;
+        }
+
+
+        #btn2{
+        margin-left:330px;
+        text-align:center;
+        height:40px;
+        padding: 5px;
+        color:rgb(71, 69, 69);
+
+        }
+        #btn2:hover{
+            background-color:transparent;
+            transition:background-color 0.4s;
+        }
+        #mainDIV{
+
+        background-color:#006B54;
+        width:100%;
+        height:660px;
+        }
+        .box{
+        padding:30px 50px;
+        display:flex;
+        height:300px;
+        width:100%;
+        }
+        .sBOX{
+        background-color: #cccccc;
+        box-shadow:0px 0px 5px black;
+        padding:50px 60px;
+        width:50%;
+        height:250px;
+        transition:transform 0.4s;
+		color:black;
+        }
+        .Ques{
+        font-size:15px;
+        }
+		
+        hr.new4 {
+        border: 1px solid black;
+        width:90%;
+        background-color:black;  
+        }
+		
+		#mainDIV p a:hover{
+		color:rgb(0, 132, 255);
+		}
+		
+		#mainDIV p a{
+		color:black;
+		text-decoration:none;
+		}
+
+</style>
+<script>
+	$(document).ready(function(){
+		$("#emailbtn").click(function(){
+            if(document.getElementById("input1").value==""||document.getElementById("input2").value==""){
+                alert("Please!! First Fill The Form Properly!!");
+            }
+            else{
+                alert("E-mail Sent Successfully.");
+            }
+        });
+		
+		$("marquee").mouseover(function(){
+			$("marquee").css("background-color","white");
+			});	
+			
+		$("marquee").mouseout(function(){
+			$("marquee").css("background-color","#00b300");
+			});
+			
+        $("#div1").mouseover(function(){
+			$("#div1").css("transform","translateY(-10px)");
+			});
+			
+		$("#div1").mouseout(function(){
+			$("#div1").css("transform","translateY(+10px)");
+			});
+			
+		$("#div2").mouseover(function(){
+			$("#div2").css("transform","translateY(-10px)");
+			});
+			
+		$("#div2").mouseout(function(){
+			$("#div2").css("transform","translateY(+10px)");
+			});
+			
+		$("#div3").mouseover(function(){
+			$("#div3").css("transform","translateY(-10px)");
+			});
+			
+		$("#div3").mouseout(function(){
+			$("#div3").css("transform","translateY(+10px)");
+			});	
+			
+		$("#div4").mouseover(function(){
+			$("#div4").css("transform","translateY(-10px)");
+			});
+			
+		$("#div4").mouseout(function(){
+			$("#div4").css("transform","translateY(+10px)");
+			});	
+	
+		
+			
+	});
+</script>
+<body onload="onLoad()">  
+    <div id="main">
+                <div id="main-div">
+                            <div id="header-logo">
+                               <a href="Home.html"><img src="Images/tarin logo.png"></a><span style="cursor:pointer;"id="sp1">Trainy.<span style="color:grey; font-size:23px;">com</span></span>
+                            </div>
+                            <div id="header">
+                                <div id="header-list">
+                                    <ul id="ul">
+                                        <li ><a  id="second" class="cool" href="Home.html"><i class="fas fa-home"></i>Home</a></li>
+                                        <li ><a id="third" class="cool"href="Bookings.html"><i class="fas fa-table"></i>Bookings</a></li>
+                                        <li ><a id="first"  style="color:rgb(150, 149, 149);" class="cool" href=""><i class="fab fa-hire-a-helper"></i>Help</a></li>
+                                        <li ><a id="fourth"  style="cursor:pointer;"  class="cool" ><i class="fas fa-id-card-alt"></i>Contacts</a></li>
+                                    </ul>
+                                </div>
+                                <div id="header-menu">
+                                    <a id="account" href="Account.html">
+                                        <button class="btn btn-success" style="font-size:23px;color:white;"><i style="margin-right:5px;" class="fas fa-user-circle"></i>Account</button>
+                                     </a>  
+                                     <a id="none" onclick="none()" href=""><i class="fas fa-bars"></i></a>
+                                </div>
+                            </div>
+                </div>
+                <div id="after-header">
+                                <div id="left" >
+                                       <div id="left-header">
+                                           <a href="Home.html"><img src="Images/tarin logo.png"></a><span onclick="cut()" id="cut"><i class="far fa-arrow-alt-circle-left"></i></span>
+                                       </div>
+                                       <div id="left-mid" style="font-family:'Courier New', Courier, monospace;">
+                                           <p style=" color:white;margin-left:40px;">Choose Your Direction :</p>
+                                           <ul id="button-list"style="list-style-type:none;">
+                                                <a class="big" href="www.facebook.com"><li>FIND US ON <b>FACEBOOK</b> <a class="small" href="www.facebook.com"><i class="fab fa-facebook-f"></i></a></li></a>
+                                                <a  class="big"href=""><li>OUR <b>YOUTUBE</b> CHANNEL<a class="small" href="www.youtube.com"><a class="small" href="www.facebook.com"><i class="fab fa-youtube"></i></a></a></li></a>
+                                                <a  class="big"href=""><li>VISIT OUR<b> INSTAGRAM</b><a class="small" href="www.instagram.com"><i class="fab fa-instagram"></i></a></li></a>
+                                            </ul>
+                                            <button id="contact-button" style="margin-left:40px;" type="button" class="btn btn-success"><i class="fas fa-phone-alt"></i>  CONTACT US NOW</button>
+                                       </div>   
+                                </div>
+                                <div id="right" style="box-shadow:0px 0px 0px 0px;background-color:transparent;" >
+                                        <div id="help-box">
+                                            <div>
+                                                <marquee direction="right" id="marq">
+                                                    <b>Trainy.com:HOW CAN WE HELP YOU ?</b>
+                                                    </marquee>
+                                                <p id="p1"><b>Describe the problem you are having :</b></p>
+                                                <input type="text" id="input1"><br><br>
+                                                <p id="p2"><b>Give us the details :</b><br>Give us the details and please be specific as possible. If it's a bug, tell us about it as we need to take it further. We'll reply within a few hours.</p>
+                                                <textarea style="width:100%; height: 65px;"type="text" id="input2"></textarea><br><br>
+                                                <p>We are here to help on weekends, <b>but responses may take a little longer.</b></p>
+                                                <p>How urgent is this issue?</p>
+                                                <form>
+                                                <select name="problem">
+                                                 <option value="Technical issue">Technical issue</option>
+                                                 <option value="Site Down">Site Down</option>
+                                                 <option value="Server Down">Server Down</option>
+                                                 </select>
+                                                </form><br>
+                                                <p>This relates to - </p>
+                                                <form>
+                                                <select name="issue">
+                                                 <option value="Payment error">Payment error</option>
+                                                 <option value="Booking Problem">Booking Problem</option>
+                                                 <option value="Sign-in Issue">Sign-in Issue</option>
+                                                 </select>
+                                                </form>
+                                                <br>
+                                                <p>Your contact details</p>
+                                                <input type="text" id="input3">
+                                                <input type="text" id="input4">
+                                                <br>
+                                                <button type="button" id="emailbtn" class="btn btn-success" ><b>Email-US</b></button>
+                                                <p id="pfill"></p>
+                                                
+                                                </div>
+                                                <p>This website provides simple booking options and it is user friendly and easy to use.
+                                                 </p>
+                                                
+                                                <button  type="button" id="btn2" class="btn btn-success" ><b>Send feedback about our Help Center</b></button>
+                                                
+                                        </div>
+                                </div>
+                </div>
+    </div>
+    <div id="mainDIV">
+        <div id="Sdiv1" class="box" >
+        
+        <div id="div1" class="sBOX">
+        <p class="Ques"><b>Q - How do I make a booking on Trainy.com?</b></p>
+        <p class="Ans"><a href="">A - You can book a ticket in five easy steps: Head over to the Trainy.com booking page, Enter your departure and arrival destinations, Select your travel dates, Choose from our wide range of trains based on your fare preferences, Click on book icon and your booking is done.</a></p>
+        </div>
+        <div id="div2" class="sBOX">
+        <p class="Ques"><b>Q - Can I avail offers on Trainy.com?</b></p>
+        <p class="Ans"><a href="">A - Of course, you can. While making bookings, you can avail any special offer that is active at that time. In accordance with the offer selected, a listing of eligible trains would show up on your screen. You can then apply for the same and click on the downwards arrow, following which budget-friendly trains would start showing up.</a></p>
+        </div>
+        </div>
+        <hr class="new4">
+        <div id="Sdiv2" class="box">
+        <div id="div3" class="sBOX">
+        <p class="Ques"><b>Q - Why could I not avail the train booking offers at the time of checkout?</b></p>
+        <p class="Ans"><a href="">A - Trainy.com makes use of a real-time reservation database to list fare and availability. As dynamic changes in fare take place, or the available train tickets sell out, the database reflects the changes in real-time.</a></p>
+        </div>
+        <div id="div4" class="sBOX">
+        <p class="Ques"><b>Q - How can I get low budget tickets on Trainy.com?</b></p>
+        <p class="Ans"><a href="">A - It’s super-easy to avail budget train fare while booking your tickets on Trainy.com. Just avail coupans and apply them durign payment form PayUmoney from Trainy.com, you can select the downward arrow, which will show the lowest fare at the top and continue downward in ascending order.</a></p>
+        </div>
+        </div>
+    <div id="end">
+    <p><b>© 2021 MAKEMYTRIP PVT. LTD.<br>
+    
+    Country India USA UAE</b></p>
+    </div>
+    </div>           
+</body>
+<script src="Website2.js"></script>
+</html>

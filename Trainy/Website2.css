@@ -1,0 +1,771 @@
+button {
+    outline:none;
+    cursor:pointer;
+}
+#main{
+    background-image:url("Images/background2.jpg");
+    background-size: 100% 100%;
+    height:620px;
+    font-family:fantasy;
+}
+#main-div{
+    width:100%;
+    height:110px;
+    display:flex;
+}
+#main-div #header-logo{
+    width:40%;
+    height:90px;
+    padding:10px 10px;
+}
+#main-div #header-logo img{
+    height:80px;
+}
+#main-div #header-logo img:hover{
+    opacity:0.6;
+    transition:opacity 0.2s;
+}
+#main-div #header-logo #sp1{
+    color:rgb(148, 235, 250);
+    font-size:30px;
+    margin-left:17px;
+    letter-spacing:5px;
+}
+
+#main-div #header{
+    height:90px;
+    width:60%;
+    display:flex;
+    padding:30px 0px 30px 145px;
+}
+#main-div #header-list{
+    width:530px;
+    height:80px;
+    margin:5px 5px 0px 0px;
+}
+#main-div #header-list ul{
+    list-style-type: none;
+    font-size:24px;
+}
+#main-div #header ul li{
+    float:left;
+    margin:0px 10px;
+    position: relative;
+}
+#main-div #header ul li a{
+    text-decoration:none;
+    color:rgb(241, 239, 239);
+}
+#none{
+    display:none;
+}
+#main-div #header ul li .cool:hover{
+    color:rgb(150, 149, 149);
+}
+#main-div #header ul li span{
+    color:white;
+}
+#main-div #header ul li a :hover{
+    color:rgb(150, 149, 149);
+}
+#main-div #header ul li i{
+    margin-right:2px;
+}
+.hover:hover{
+    color:rgb(150, 149, 149);;
+}
+#account{
+    margin-left:2px;
+}
+#first::after{
+    content: '';
+    height:2px;
+    background:rgb(150, 149, 149);
+    width:100%;
+    display:block;
+}
+/**upto here**/
+.cool::after{
+    content: '';
+    height:0px;
+    background:rgb(150, 149, 149);
+    width:0;
+    display:block;
+    transition: width 0.3s;
+}
+.cool:hover::after{
+    width:100%;
+    height:2px;
+    transition: width 0.3s;
+}
+#main-div #header-menu{
+    display:flex;
+    margin-right:15px;
+}
+#main-div #header-menu #none{
+    margin-left:10px; 
+    color:white;
+    font-size:20px;
+}
+#main-div #header-menu button:hover{
+   background-color:transparent;
+   color:rgb(139, 139, 139);
+   transition:background-color 0.5s;
+}
+/**after header starts here**/
+#main #after-header{
+    display:flex;
+    height:500px;
+    width:100%;
+}
+#main #after-header #left{
+    width:0%;
+    overflow:hidden;
+    height:500px;
+    background-color:rgba(2, 122, 86, 0.1);
+    box-shadow:5px 10px 15px 5px;
+    position:relative;
+}
+#main #after-header #right{
+    width:100%;
+    height:500px;
+    background-color:rgba(31, 32, 32, 0.4);
+    box-shadow:5px 10px 15px 5px;
+}
+#main #left #left-header{
+    width:100%;
+    height:30px;
+    padding:10px 20px;
+}
+#main #left #left-header a img{
+    height:50px;
+    filter:grayscale(100%);
+}
+#main #left #left-header a img:hover{
+    filter:grayscale(0%);
+    transition:filter 0.5s;
+}
+#main #left #left-header span{
+    font-size:30px;
+    margin:auto;
+    margin:50px 0px 0px 330px;
+    color:rgb(252, 85, 85);
+    cursor: pointer;
+}
+#main #left #left-header span:hover{
+    opacity:0.6;
+}
+#main #left #left-mid{
+    margin:60px 40px 40px 30px;
+    padding:0px;
+    width:300px;
+    height:400px;
+    align-items:center;
+}
+#main #left #left-mid #button-list{
+    margin:40px 0px 40px 0px;
+}
+#main #left #left-mid a{
+    text-decoration:none;
+    color:white;
+}
+#main #left #left-mid #button-list li{
+    margin:20px 0px 10px 0px;
+    border:0px white solid;
+    width:250px;
+    height:40px;
+    padding-left:10px;
+    background-color:rgba(128, 128, 128,0.4);
+
+}
+#main #left #left-mid #button-list li:hover{
+    box-shadow:0px 4px 4px 0px rgba(178, 252, 190,0.5);
+    transition:box-shadow 0.4s;
+}
+#main #left #left-mid #button-list li .small{
+   text-align: right;
+   border:0px white solid;
+    width:45px;
+    height:39px;
+    text-align: center;
+    background-color: aqua;
+    background-color:rgba(128, 128, 128,0.9);
+    position:absolute;
+    margin:0px 0px 0px 12px;
+    padding:5px 5px ;
+    display:none;
+}
+#main #left #left-mid #button-list li .small:hover{
+    box-shadow:0px 4px 4px 0px rgba(0, 48, 7,0.8);
+    transform:translateY(-5px);
+    transition:transform 0.4s;
+}
+#main #left #left-mid #button-list li .small i{
+    font-size:25px;
+}
+#contact-button:hover{
+   background-color:transparent;
+   transition:background-color 0.3s ;
+   outline:none;
+}
+#main #right{
+    padding-top:60px;
+}
+#main #right #direction{
+    width:450px;
+    height:400px;
+    background-color:rgba(7, 7, 7, 0.6);
+    margin:auto;
+    box-shadow:0px 20px 40px rgb(0, 0, 0);
+    padding:20px 10px;
+    letter-spacing: 1.5px;
+    color:rgb(139, 139, 138);
+    border:4px solid rgb(115, 180, 115);
+    border-radius:25px;
+    
+}
+#main #right #direction h3{
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing:4px;
+}
+#main #right #direction .form select{
+    width:190px;
+    padding-left:7px;
+    height:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgba(0, 0, 0,0.8);
+    border:none;
+    background-color:rgba(255, 255, 255,0.7);
+}
+#main #right #direction .form input{
+    width:190px;
+    padding-left:7px;
+    height:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgba(0, 0, 0,0.8);
+    border:none;
+    background-color:rgba(255, 255, 255,0.7);
+}
+
+#radio-form input{
+    margin-left:7px;
+    
+}
+form table tr th{
+    width:400px;
+}
+#main #right #direction form select:focus{
+    outline:none;
+}
+#main #right #direction form input:focus{
+    outline:none;
+}
+#main #right #direction button{
+    color:rgb(228, 224, 224);
+    font-family:Arial;
+    margin:30px 65px;
+    width:300px;
+   
+}
+#main #right #direction button:hover{
+    background-color:transparent;
+    transition:background-color 0.3s;
+}
+/* account page html css goes here */
+.login{
+    width:400px;
+    height:450px;
+    background-color:rgba(7, 7, 7, 0.6);
+    margin:auto;
+    border:4px solid rgb(115, 180, 115);
+    box-shadow:0px 20px 40px rgb(0, 0, 0);
+    position:relative;
+    overflow: hidden;
+    border-radius:50px;
+    bottom:30px;
+}
+.login input:focus{
+   box-shadow:0 0 5px rgba(8, 246, 87, 0.8);
+   border:2px solid rgba(8, 246, 127, 0.8);
+   outline:none;
+}
+.login #header{
+  text-align: center;
+   margin-right:0px;
+}
+.login #header span{
+    display: inline-block;
+    cursor: pointer;
+    margin:20px 20px 0px 20px ;
+}
+.login form input{
+   width:80%;
+   height:40px;
+   padding-left: 50px;
+   margin:10px 0px 10px 0px;
+   border-radius:5px;
+}
+.login form{
+    text-align:center;
+    top:170px;
+    position:absolute;
+}
+.login form button{
+    width:80%;
+    border-radius:25px;
+    margin-top:25px;
+}
+.login form button:hover{
+    background-color:transparent;
+    transition: background-color 0.2s;
+}
+.login #log{
+    left:-450px;
+    width:100%;
+}
+.eye{
+    opacity:0.5;
+    right:40px;
+    cursor:pointer;
+}
+.eye i{
+    color:black;
+    font-size:20px;
+}
+.eye:hover{
+    opacity:1;
+    transition:opacity 0.3s;
+}
+.not-eye{
+    opacity:0.5;
+    right:40px;
+    color:black;
+    cursor:pointer;
+    display:none;
+}
+.not-eye i{
+    color:black;
+    font-size:20px;
+}
+.not-eye:hover{
+    opacity:1;
+    transition:opacity 0.3s;
+}
+.login #log button{
+    width:85%;
+}
+#under{
+    width:80px;
+    height:3px;
+    background-color:rgb(115, 180, 115);
+    margin:0px 0px 10px 200px;
+    border-radius:20px;
+}
+.login #reg input{
+    margin:20px 0px 20px 0px;
+    width:330px;
+}
+.login #reg {
+    margin-top:-50px;
+    
+}
+.login #reg .progress{
+    margin-left:40px;
+}
+.login form span{
+    font-size:25px;
+    color:rgb(177, 2, 2);
+    position:absolute;
+    margin:16px 0px 0px 5px;
+}
+.login #reg span{
+    margin-top:23px;
+}
+.danger{
+    background-color:rgb(248, 18, 18);
+}
+.warning{
+    background-color:greenyellow;
+}
+.success{
+    background-color:green;
+}
+.shake{
+    animation: shakes 0.6s linear;
+    animation-iteration-count:infinite;
+}
+@keyframes shakes {
+    0%{background-color:rgb(240, 123, 162);}
+    100%{
+        baxkground-color:rgb(241, 234, 236);
+    }
+}
+/* account page ends here */
+/*  */
+/*  */
+/*  */
+/* help page start here */
+#help-box{
+    width:700px;
+    height:820px;
+    margin:auto;
+    background-color:rgba(217, 223, 223,0.6);
+    padding:20px 50px;
+    letter-spacing: 1.5px;
+    border-radius:5px;
+    color:rgb(49, 49, 48);
+    box-shadow:0px 0px 10px rgb(214, 226, 215);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    
+}
+/* help page ends here */
+
+/* responsiveness of page is start from here */
+@media only screen and (max-width: 400px){
+    #header-menu{
+        margin-right:150px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    #none{
+        display:block;
+        margin:9px 10px 0px 0px;
+        
+    }
+    #help-box{
+        width:500px;
+    }
+    #input2{
+        width:450px;
+    }
+    main{
+        background-size:100% 100%;
+    }
+    #none i:hover{
+        color:rgba(255, 255, 255,0.3);
+        transition:color 0.2s;
+    }
+    #account{
+        margin-right:20px;
+    }
+    #main-div #header ul li{
+        display:block;
+        float:none;
+    }
+    #header-menu{
+        margin-right:40px;
+    }
+    #main-div #header ul {
+        position:absolute;
+        left:0;
+        top:140px;
+        width:100%;
+        overflow:hidden;
+        background-color:rgba(183, 235, 140,0.7);
+        text-align: right;
+        transition:height 0.4s;
+    }
+    .cool::after{
+        content:none;
+    }
+    #first::after{
+        content:none;
+    }
+    #first{
+        color:white;
+     }
+}
+/* responsiveness ends here  */
+ /* bookings ticket div css starts here --> */
+ .booking-box{
+     width:850px;
+     height:200px;
+     margin:auto;
+     background-color:rgba(236, 227, 227,0.7);
+     border:2px solid rgba(174, 240, 121, 0.7);
+     border-radius:10px;
+     color:black;
+     padding:10px 10px ;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     box-shadow:0 0 5px rgba(44, 44, 44, 0.5);
+ }
+ .booking-box a{
+     text-decoration:none;
+     color:black;
+ }
+ #booking-ticket-1{
+     display:none;
+ }
+ #booking-ticket-2{
+     margin-top:30px;
+     display:none;
+}
+#booking-ticket-3{
+    display:none;
+}
+#booking-ticket-4{
+    margin-top:30px;
+    display:none;
+}
+.heading{
+   color:rgb(44, 49, 40);
+   font-size:25px;
+   letter-spacing:1px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.below-heading{
+    font-size:12px;
+
+}
+.timings{
+    font-size:21px;
+    letter-spacing:1px;
+}
+.ticket-class{
+    width:170px;
+    height:80px;
+    box-shadow:0 0 5px rgba(44, 44, 44, 0.7);
+    margin-left:20px;
+    border-radius:10px;
+    padding:5px 5px;
+}
+.ticket-class:hover{
+    background-color:rgba(77, 191, 243,0.1);
+    border:1px solid rgb(7, 172, 238);
+    transition:background-color  0.3s ;
+    transform: translateY(-5px);
+    transition:transform 0.4s;
+}
+.train-class{
+   font-size:15px;
+}
+.class{
+   font-size:15px;
+   color:rgb(14, 168, 66);
+}
+.update{
+    font-size:13px;
+    color:rgba(34, 33, 33,0.8);
+}
+.not-available{
+    font-size:13px;
+    color:rgba(168, 14, 14,0.8);
+}
+  /* bookings ticket div css starts here --> */
+/* Error div css starts here */
+#error-div{
+  width:900px;
+  height:300px;
+  margin:auto;
+  display:none;
+}
+#ex i{
+    font-size:120px;
+    color:rgba(245, 38, 38,0.7);
+    animation:blink 0.7s linear;
+    animation-iteration-count:infinite;
+}
+@keyframes blink {
+    0%{
+        color:rgba(240, 148, 148, 0.4);
+        transform: translateX(-3px);
+    }
+    100%{
+        color:rgba(245, 38, 38,1);
+        transform: translateX(3px);
+    }
+    
+}
+#sorry-text{
+    font-size:50px;
+    color:white;
+}
+#sorry-text i{
+    color:rgb(72, 247, 150);
+    font-size:65px;
+}
+/* Error div css ends here */
+#end{
+padding: 30px 40px 0px 0px;
+width:100%;
+height:100px;
+background-color:black;
+text-align:right;
+color:white;
+}
+end p{
+
+font-size:17px;
+}
+/*main 2 div starts here  */
+/*main 2 div ends here  */
+#main2{
+    width:100%;
+    height:1200px;
+    background-color:#006B54;
+    border-top:15px double rgb(5, 5, 5);
+}
+#offers{
+    margin:40px auto;
+    width:95%;
+    height:400px;
+    background-color:#cccccc;
+    border-radius:20px;
+    box-shadow:0px 0px 6px black;
+    padding:20px 20px;
+}
+.offer{
+    width:60%;
+    height:220px;
+    background-color: white;
+    box-shadow:0px 0px 6px black;
+    border-radius:20px;
+    margin:0px 10px;
+    position:relative;
+}
+.offer:hover{
+    background-color:#adebad;
+    transition:background-color 0.3s;
+}
+.header{
+    display: flex;
+}
+.footer{
+    display: flex;
+    padding:70px 20px;
+}
+.offer:hover{
+    transform: translateY(-10px);
+    transition:transform 0.4s;
+    cursor:pointer;
+}
+.offer hr{
+    width:40px;
+    background-color:red;
+} 
+.offer img{
+    width:110px;
+    height:110px;
+    box-shadow: 0px 0px 10px black ;
+    border-radius: 10px;
+    margin:-15px 0px 0px 25px;
+}
+.second-div{
+    padding:10px 20px;
+}
+.offer-heading{
+    font-size:20px;
+}
+#loan-div{
+    width:95%;
+    height:160px;
+    margin:auto;
+    display:flex;
+    padding:10px 20px;
+}
+.loans{
+    width:50%;
+    height:120px;
+    margin:0px 10px;
+    border-radius:10px;
+    background-color: white;
+    display:flex;
+    cursor: pointer;
+}
+.loans img{
+    width:80px;
+    height:80px;
+    margin:15px 0px 0px -20px;
+}
+#loan1{
+    border:3px solid rgba(248, 50, 83,0.5);
+    border-left:50px solid rgba(248, 50, 83,0.5);
+}
+#loan1 img{
+    border:2px solid rgba(248, 50, 83,1);
+}
+#loan1:hover{
+    border:3px solid rgba(248, 50, 83,1);
+    border-left:50px solid rgba(248, 50, 83,1);
+    transition: border 0.3s;
+}
+#loan2{
+    border:3px solid rgba(212, 248, 50, 0.5);
+    border-left:50px solid rgba(212, 248, 50, 0.5);
+}
+#loan2 img{
+    border:2px solid rgba(212, 248, 50, 1);
+}
+#loan2:hover{
+    border:3px solid rgba(212, 248, 50, 1);
+    border-left:50px solid rgba(212, 248, 50, 1);
+    transition: border 0.3s;
+}
+#loan3{
+    border:3px solid rgba(50, 143, 248, 0.5);
+    border-left:50px solid rgba(50, 143, 248, 0.5);
+}
+#loan3 img{
+    border:2px solid rgba(97, 145, 201, 1);
+}
+#loan3:hover{
+    border:3px solid rgba(97, 145, 201, 1);
+    border-left:50px solid rgba(50, 145, 201,1);
+    transition: border 0.3s;
+}
+.padder{
+    padding:20px 20px;
+}
+#foot{
+    width:95%;
+    margin:auto;
+    height:500px;
+    padding:30px 30px;
+    display:flex;
+}
+#foot li{
+    font-size:13px;
+}
+#foot li a{
+    color:white;
+    text-decoration:none;
+}
+#foot li a:hover{
+    color:rgb(0, 132, 255);
+}
+#foot  ul{
+    list-style-type: none;
+}
+.foot-list{
+    height:500px;
+    width:30%;
+    margin:0px 10px;
+}
+.head{
+    margin-bottom:20px;
+    font-size: large;
+}
+#booker{
+    width:400px;
+    height:350px;
+    background-color:rgba(238, 234, 234, 0.5);
+    margin:auto;
+    border:4px solid rgba(0, 48, 7,0.7);
+    border-radius:15px;
+}
+#booker-form input{
+    width:350px;
+    height:40px;
+    padding:0px 0px 0px 5px;
+    margin:40px 0px 0px 20px;
+}
+#booker-form button{
+    width:200px;
+    margin:40px 0px 0px 95px;
+}
+#booker-form button:hover{
+    background-color:transparent;
+    transition:background-color 0.3s;
+}
